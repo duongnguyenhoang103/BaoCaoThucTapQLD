@@ -34,7 +34,7 @@ namespace DeMoQLSV1
             {
                 if (txtDN.TextLength == 0)
                 {
-                    MessageBox.Show(" ban phải nhập tài khoản");
+                    MessageBox.Show(" bạn phải nhập tài khoản");
                     txtDN.Focus();
                     return;
                 }
@@ -75,8 +75,32 @@ namespace DeMoQLSV1
 
         private void buttonX2_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            main_from.showBtDN();
+            if (DialogResult.Yes ==MessageBox.Show("Bạn có chắc muốn thoát chương trình","?",MessageBoxButtons.YesNo,MessageBoxIcon.Question))
+            {
+                NguoiDungBE.TaiKhoan = txtDN.Text.ToString();
+                this.Dispose();
+                main_from.showBtDN();
+                main_from.Close();
+            }                                 
+        }
+
+        private void frmDangN_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            NguoiDungBE.TaiKhoan = txtDN.Text.ToString();
+            string taikhoan = txtDN.Text.ToString();
+            if (string.IsNullOrEmpty(taikhoan))
+            {
+                if (DialogResult.Yes == MessageBox.Show("Bạn có chắc muốn thoát chương trình", "?", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {                   
+                    this.Dispose();
+                    main_from.showBtDN();
+                    main_from.Close();
+                }
+            }
+            else
+            {
+                return;
+            }
            
         }
     }

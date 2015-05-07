@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
+using BusinessEntity;
 
 namespace DeMoQLSV1
 {
@@ -227,6 +228,8 @@ namespace DeMoQLSV1
                 BcTkSinhVien_ribbonBar13.Enabled = true;
               //  BcTKGiangVien_ribbonBar14.Enabled = true;
 
+
+
             
             
         }
@@ -265,6 +268,11 @@ namespace DeMoQLSV1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            LogInbuttonItem17.Visible = false;
+            LogOut_buttonItem18.Visible = false;
+            LogIn_ribbonBar1.Visible = false;
+
+            toolLableStatus.Visible = false;
           //  LogIn_ribbonBar1.Visible = false;
             hideMenu();
             QLD_ribbonBar9.Enabled = false;
@@ -273,19 +281,42 @@ namespace DeMoQLSV1
             CapNhatTK_ribbonBar1.Visible = false;
             frmDangN _frmLog = new frmDangN(this);
             _frmLog.ShowDialog();
-            this.reportViewer1.RefreshReport();
+          //  this.reportViewer1.RefreshReport();
+            string taikhoan = NguoiDungBE.TaiKhoan.ToString().Trim();
+            if (!string.IsNullOrEmpty(taikhoan))
+            {
+                toolLableStatus.Text = "Bạn đang đăng nhập với tài khoản là :" + taikhoan;
+                toolLableStatus.Visible = true;
+            }
+            else
+            {
+                toolLableStatus.Visible = false;
+            }
+           
         }
        
 
         private void buttonItem2_Click(object sender, EventArgs e)
         {
-
+            toolLableStatus.Visible = false; 
             frmDangN _frmLog = new frmDangN(this);
             _frmLog.Show();
+            string taikhoan = NguoiDungBE.TaiKhoan.ToString();
+            if (!string.IsNullOrEmpty(taikhoan))
+            {
+                toolLableStatus.Text = "Bạn đang đăng nhập với tài khoản là :" + taikhoan;
+                toolLableStatus.Visible = true;
+            }
+            else
+            {
+                toolLableStatus.Visible = false;
+            }
         }
 
         private void buttonItem3_Click(object sender, EventArgs e)
         {
+            toolLableStatus.Visible = false;
+            //toolLableStatus.Text = NguoiDungBE.TaiKhoan.ToString();
             CloseAllTab();
             hideMenu();
             QLD_ribbonBar9.Enabled = false;
@@ -293,7 +324,19 @@ namespace DeMoQLSV1
             CapNhatTK_ribbonBar1.Visible = false;
 
             frmDangN frm = new frmDangN(this);
-            frm.ShowDialog(); 
+            frm.ShowDialog();
+            string taikhoan = NguoiDungBE.TaiKhoan.ToString();
+            if (!string.IsNullOrEmpty(taikhoan))
+            {
+                toolLableStatus.Text = "Bạn đang đăng nhập với tài khoản là :" + NguoiDungBE.TaiKhoan.ToString();
+                toolLableStatus.Visible = true; 
+            }
+            else
+            {
+                toolLableStatus.Visible = false;
+            }
+            
+           
 
         }
 
@@ -321,6 +364,9 @@ namespace DeMoQLSV1
 
         }
 
+       
+    
+      
        
 
       

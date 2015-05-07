@@ -31,10 +31,10 @@
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.txtMK = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtDN = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtDN = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtMK = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.panelEx1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,31 @@
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 1;
             // 
+            // txtMK
+            // 
+            // 
+            // 
+            // 
+            this.txtMK.Border.Class = "TextBoxBorder";
+            this.txtMK.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMK.Location = new System.Drawing.Point(157, 95);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.PasswordChar = '*';
+            this.txtMK.Size = new System.Drawing.Size(140, 25);
+            this.txtMK.TabIndex = 2;
+            // 
+            // txtDN
+            // 
+            // 
+            // 
+            // 
+            this.txtDN.Border.Class = "TextBoxBorder";
+            this.txtDN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDN.Location = new System.Drawing.Point(157, 44);
+            this.txtDN.Name = "txtDN";
+            this.txtDN.Size = new System.Drawing.Size(140, 25);
+            this.txtDN.TabIndex = 1;
+            // 
             // labelX2
             // 
             this.labelX2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,31 +134,6 @@
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "Tài khoản";
             // 
-            // txtDN
-            // 
-            // 
-            // 
-            // 
-            this.txtDN.Border.Class = "TextBoxBorder";
-            this.txtDN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDN.Location = new System.Drawing.Point(157, 44);
-            this.txtDN.Name = "txtDN";
-            this.txtDN.Size = new System.Drawing.Size(140, 25);
-            this.txtDN.TabIndex = 1;
-            // 
-            // txtMK
-            // 
-            // 
-            // 
-            // 
-            this.txtMK.Border.Class = "TextBoxBorder";
-            this.txtMK.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK.Location = new System.Drawing.Point(157, 95);
-            this.txtMK.Name = "txtMK";
-            this.txtMK.PasswordChar = '*';
-            this.txtMK.Size = new System.Drawing.Size(140, 25);
-            this.txtMK.TabIndex = 2;
-            // 
             // frmDangN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +144,7 @@
             this.MinimumSize = new System.Drawing.Size(395, 281);
             this.Name = "frmDangN";
             this.Text = "Đăng nhập hệ thống";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDangN_FormClosing);
             this.Load += new System.EventHandler(this.frmDangN_Load);
             this.panelEx1.ResumeLayout(false);
             this.ResumeLayout(false);
