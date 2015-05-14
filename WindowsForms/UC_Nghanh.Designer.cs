@@ -168,7 +168,7 @@
             this.DiaChi});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
@@ -338,12 +338,12 @@
             this.btReset.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btReset.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btReset.Location = new System.Drawing.Point(532, 150);
+            this.btReset.Location = new System.Drawing.Point(532, 144);
             this.btReset.Name = "btReset";
             this.btReset.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btReset.Size = new System.Drawing.Size(75, 23);
+            this.btReset.Size = new System.Drawing.Size(75, 29);
             this.btReset.TabIndex = 14;
-            this.btReset.Text = "Reset";
+            this.btReset.Text = "Làm mới";
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // txtSoL
@@ -364,10 +364,10 @@
             this.bttNew.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.bttNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.bttNew.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.bttNew.Location = new System.Drawing.Point(208, 150);
+            this.bttNew.Location = new System.Drawing.Point(208, 144);
             this.bttNew.Name = "bttNew";
             this.bttNew.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.bttNew.Size = new System.Drawing.Size(75, 23);
+            this.bttNew.Size = new System.Drawing.Size(75, 29);
             this.bttNew.TabIndex = 10;
             this.bttNew.Text = "Nhập mới";
             this.bttNew.Click += new System.EventHandler(this.bttNew_Click);
@@ -390,10 +390,10 @@
             this.btXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btXoa.Location = new System.Drawing.Point(451, 150);
+            this.btXoa.Location = new System.Drawing.Point(451, 144);
             this.btXoa.Name = "btXoa";
             this.btXoa.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btXoa.Size = new System.Drawing.Size(75, 23);
+            this.btXoa.Size = new System.Drawing.Size(75, 29);
             this.btXoa.TabIndex = 13;
             this.btXoa.Text = "Xóa";
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
@@ -416,10 +416,10 @@
             this.btSua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btSua.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btSua.Location = new System.Drawing.Point(370, 150);
+            this.btSua.Location = new System.Drawing.Point(370, 144);
             this.btSua.Name = "btSua";
             this.btSua.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btSua.Size = new System.Drawing.Size(75, 23);
+            this.btSua.Size = new System.Drawing.Size(75, 29);
             this.btSua.TabIndex = 12;
             this.btSua.Text = "Sửa";
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
@@ -442,10 +442,10 @@
             this.btThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btThem.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btThem.Location = new System.Drawing.Point(289, 150);
+            this.btThem.Location = new System.Drawing.Point(289, 144);
             this.btThem.Name = "btThem";
             this.btThem.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btThem.Size = new System.Drawing.Size(75, 23);
+            this.btThem.Size = new System.Drawing.Size(75, 29);
             this.btThem.TabIndex = 11;
             this.btThem.Text = "Thêm";
             this.btThem.Click += new System.EventHandler(this.btThem_Click);

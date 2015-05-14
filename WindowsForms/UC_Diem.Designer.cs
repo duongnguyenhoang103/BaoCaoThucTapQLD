@@ -598,7 +598,7 @@
             this.btReset.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.btReset.Size = new System.Drawing.Size(75, 33);
             this.btReset.TabIndex = 19;
-            this.btReset.Text = "Reset";
+            this.btReset.Text = "Làm mới";
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // bttNew

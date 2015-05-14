@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btReset = new DevComponents.DotNetBar.ButtonX();
             this.btSearch = new DevComponents.DotNetBar.ButtonX();
             this.btXoa = new DevComponents.DotNetBar.ButtonX();
@@ -61,12 +61,12 @@
             this.btReset.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btReset.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btReset.Location = new System.Drawing.Point(593, 20);
+            this.btReset.Location = new System.Drawing.Point(593, 27);
             this.btReset.Name = "btReset";
             this.btReset.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btReset.Size = new System.Drawing.Size(75, 36);
+            this.btReset.Size = new System.Drawing.Size(75, 29);
             this.btReset.TabIndex = 13;
-            this.btReset.Text = "Reset";
+            this.btReset.Text = "Làm mới";
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // btSearch
@@ -87,10 +87,10 @@
             this.btXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btXoa.Location = new System.Drawing.Point(486, 20);
+            this.btXoa.Location = new System.Drawing.Point(486, 27);
             this.btXoa.Name = "btXoa";
             this.btXoa.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btXoa.Size = new System.Drawing.Size(75, 36);
+            this.btXoa.Size = new System.Drawing.Size(75, 29);
             this.btXoa.TabIndex = 12;
             this.btXoa.Text = "Xóa";
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
@@ -100,10 +100,10 @@
             this.btThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btThem.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btThem.Location = new System.Drawing.Point(276, 20);
+            this.btThem.Location = new System.Drawing.Point(276, 27);
             this.btThem.Name = "btThem";
             this.btThem.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btThem.Size = new System.Drawing.Size(75, 36);
+            this.btThem.Size = new System.Drawing.Size(75, 29);
             this.btThem.TabIndex = 10;
             this.btThem.Text = "Thêm";
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
@@ -125,10 +125,10 @@
             this.btSua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btSua.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btSua.Location = new System.Drawing.Point(386, 20);
+            this.btSua.Location = new System.Drawing.Point(386, 27);
             this.btSua.Name = "btSua";
             this.btSua.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btSua.Size = new System.Drawing.Size(75, 36);
+            this.btSua.Size = new System.Drawing.Size(75, 29);
             this.btSua.TabIndex = 11;
             this.btSua.Text = "Sửa";
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
@@ -251,14 +251,14 @@
             this.STT,
             this.TaiKhoan,
             this.MatKhau});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTaiKhoan.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTaiKhoan.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTaiKhoan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvTaiKhoan.Location = new System.Drawing.Point(3, 22);

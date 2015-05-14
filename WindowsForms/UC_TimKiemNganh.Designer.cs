@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btReset = new DevComponents.DotNetBar.ButtonX();
             this.btXoa = new DevComponents.DotNetBar.ButtonX();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -78,12 +78,12 @@
             this.btReset.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btReset.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btReset.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btReset.Location = new System.Drawing.Point(497, 170);
+            this.btReset.Location = new System.Drawing.Point(497, 167);
             this.btReset.Name = "btReset";
             this.btReset.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btReset.Size = new System.Drawing.Size(75, 20);
+            this.btReset.Size = new System.Drawing.Size(75, 23);
             this.btReset.TabIndex = 13;
-            this.btReset.Text = "Reset";
+            this.btReset.Text = "Làm mới";
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // btXoa
@@ -91,10 +91,10 @@
             this.btXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btXoa.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btXoa.Location = new System.Drawing.Point(390, 170);
+            this.btXoa.Location = new System.Drawing.Point(390, 167);
             this.btXoa.Name = "btXoa";
             this.btXoa.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btXoa.Size = new System.Drawing.Size(75, 20);
+            this.btXoa.Size = new System.Drawing.Size(75, 23);
             this.btXoa.TabIndex = 12;
             this.btXoa.Text = "Xóa";
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
@@ -183,10 +183,10 @@
             this.btSua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btSua.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btSua.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
-            this.btSua.Location = new System.Drawing.Point(290, 170);
+            this.btSua.Location = new System.Drawing.Point(290, 167);
             this.btSua.Name = "btSua";
             this.btSua.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
-            this.btSua.Size = new System.Drawing.Size(75, 20);
+            this.btSua.Size = new System.Drawing.Size(75, 23);
             this.btSua.TabIndex = 11;
             this.btSua.Text = "Sửa";
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
@@ -443,14 +443,14 @@
             this.SDT,
             this.Email,
             this.DiaChi});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvNganh.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvNganh.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNganh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNganh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvNganh.Location = new System.Drawing.Point(3, 22);

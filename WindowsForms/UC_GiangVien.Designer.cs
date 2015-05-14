@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            DevComponents.DotNetBar.RoundRectangleShapeDescriptor roundRectangleShapeDescriptor1 = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
-            DevComponents.DotNetBar.RoundRectangleShapeDescriptor roundRectangleShapeDescriptor2 = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
-            DevComponents.DotNetBar.RoundRectangleShapeDescriptor roundRectangleShapeDescriptor3 = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
-            DevComponents.DotNetBar.RoundRectangleShapeDescriptor roundRectangleShapeDescriptor4 = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
-            DevComponents.DotNetBar.RoundRectangleShapeDescriptor roundRectangleShapeDescriptor5 = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
-            DevComponents.DotNetBar.RoundRectangleShapeDescriptor roundRectangleShapeDescriptor6 = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
             this.txtTenGV = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
@@ -215,7 +209,7 @@
             this.Email});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
@@ -349,12 +343,10 @@
             this.btReset.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.btReset.Location = new System.Drawing.Point(632, 16);
             this.btReset.Name = "btReset";
-            roundRectangleShapeDescriptor1.BottomRight = 12;
-            roundRectangleShapeDescriptor1.TopLeft = 12;
-            this.btReset.Shape = roundRectangleShapeDescriptor1;
+            this.btReset.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.btReset.Size = new System.Drawing.Size(75, 36);
             this.btReset.TabIndex = 18;
-            this.btReset.Text = "Reset";
+            this.btReset.Text = "Làm mới";
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // bttNew
@@ -364,9 +356,7 @@
             this.bttNew.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.bttNew.Location = new System.Drawing.Point(215, 16);
             this.bttNew.Name = "bttNew";
-            roundRectangleShapeDescriptor2.BottomRight = 12;
-            roundRectangleShapeDescriptor2.TopLeft = 12;
-            this.bttNew.Shape = roundRectangleShapeDescriptor2;
+            this.bttNew.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.bttNew.Size = new System.Drawing.Size(75, 36);
             this.bttNew.TabIndex = 14;
             this.bttNew.Text = "Nhập mới";
@@ -379,9 +369,7 @@
             this.btXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.btXoa.Location = new System.Drawing.Point(529, 16);
             this.btXoa.Name = "btXoa";
-            roundRectangleShapeDescriptor3.BottomRight = 12;
-            roundRectangleShapeDescriptor3.TopLeft = 12;
-            this.btXoa.Shape = roundRectangleShapeDescriptor3;
+            this.btXoa.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.btXoa.Size = new System.Drawing.Size(75, 36);
             this.btXoa.TabIndex = 13;
             this.btXoa.Text = "Xóa";
@@ -394,9 +382,7 @@
             this.btSua.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.btSua.Location = new System.Drawing.Point(429, 16);
             this.btSua.Name = "btSua";
-            roundRectangleShapeDescriptor4.BottomRight = 12;
-            roundRectangleShapeDescriptor4.TopLeft = 12;
-            this.btSua.Shape = roundRectangleShapeDescriptor4;
+            this.btSua.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.btSua.Size = new System.Drawing.Size(75, 36);
             this.btSua.TabIndex = 12;
             this.btSua.Text = "Sửa";
@@ -409,9 +395,7 @@
             this.btThem.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.btThem.Location = new System.Drawing.Point(319, 16);
             this.btThem.Name = "btThem";
-            roundRectangleShapeDescriptor5.BottomRight = 12;
-            roundRectangleShapeDescriptor5.TopLeft = 12;
-            this.btThem.Shape = roundRectangleShapeDescriptor5;
+            this.btThem.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.btThem.Size = new System.Drawing.Size(75, 36);
             this.btThem.TabIndex = 11;
             this.btThem.Text = "Thêm";
@@ -589,9 +573,7 @@
             this.btSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.btSearch.Location = new System.Drawing.Point(13, 8);
             this.btSearch.Name = "btSearch";
-            roundRectangleShapeDescriptor6.BottomRight = 12;
-            roundRectangleShapeDescriptor6.TopLeft = 12;
-            this.btSearch.Shape = roundRectangleShapeDescriptor6;
+            this.btSearch.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.btSearch.Size = new System.Drawing.Size(102, 24);
             this.btSearch.TabIndex = 13;
             this.btSearch.Text = "Tìm kiếm";

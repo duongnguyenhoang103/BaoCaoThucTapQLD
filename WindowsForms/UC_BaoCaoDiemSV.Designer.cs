@@ -36,6 +36,10 @@
             this.cbMaMon = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.panel5 = new System.Windows.Forms.Panel();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.cbN = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.panel13 = new System.Windows.Forms.Panel();
             this.cbHocKi = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboItem9 = new DevComponents.Editors.ComboItem();
@@ -44,12 +48,8 @@
             this.comboItem12 = new DevComponents.Editors.ComboItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbMaSV = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.cbN = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -87,11 +87,11 @@
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -194,6 +194,48 @@
             this.labelX5.TabIndex = 6;
             this.labelX5.Text = "Học  kì";
             // 
+            // panel8
+            // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel8.Controls.Add(this.labelX3);
+            this.panel8.Location = new System.Drawing.Point(3, 67);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(123, 38);
+            this.panel8.TabIndex = 18;
+            // 
+            // labelX3
+            // 
+            this.labelX3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.Location = new System.Drawing.Point(8, 3);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(106, 23);
+            this.labelX3.TabIndex = 6;
+            this.labelX3.Text = "Mã nghành";
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel9.Controls.Add(this.cbN);
+            this.panel9.Location = new System.Drawing.Point(132, 58);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(124, 47);
+            this.panel9.TabIndex = 16;
+            // 
+            // cbN
+            // 
+            this.cbN.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbN.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbN.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbN.DisplayMember = "Text";
+            this.cbN.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbN.ItemHeight = 19;
+            this.cbN.Location = new System.Drawing.Point(0, 13);
+            this.cbN.Name = "cbN";
+            this.cbN.Size = new System.Drawing.Size(108, 25);
+            this.cbN.TabIndex = 13;
+            this.cbN.SelectedValueChanged += new System.EventHandler(this.cbN_SelectedValueChanged);
+            // 
             // panel13
             // 
             this.panel13.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -256,24 +298,6 @@
             this.labelX1.TabIndex = 6;
             this.labelX1.Text = "Mã sinh viên ";
             // 
-            // panel8
-            // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel8.Controls.Add(this.labelX3);
-            this.panel8.Location = new System.Drawing.Point(3, 67);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(123, 38);
-            this.panel8.TabIndex = 18;
-            // 
-            // labelX3
-            // 
-            this.labelX3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.Location = new System.Drawing.Point(8, 3);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(106, 23);
-            this.labelX3.TabIndex = 6;
-            this.labelX3.Text = "Mã nghành";
-            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -296,30 +320,6 @@
             this.cbMaSV.Name = "cbMaSV";
             this.cbMaSV.Size = new System.Drawing.Size(128, 25);
             this.cbMaSV.TabIndex = 15;
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel9.Controls.Add(this.cbN);
-            this.panel9.Location = new System.Drawing.Point(132, 58);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(124, 47);
-            this.panel9.TabIndex = 16;
-            // 
-            // cbN
-            // 
-            this.cbN.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbN.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cbN.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbN.DisplayMember = "Text";
-            this.cbN.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbN.ItemHeight = 19;
-            this.cbN.Location = new System.Drawing.Point(0, 13);
-            this.cbN.Name = "cbN";
-            this.cbN.Size = new System.Drawing.Size(108, 25);
-            this.cbN.TabIndex = 13;
-            this.cbN.SelectedValueChanged += new System.EventHandler(this.cbN_SelectedValueChanged);
             // 
             // panel6
             // 
@@ -519,7 +519,7 @@
             this.HocKi});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
@@ -705,7 +705,7 @@
             this.btReset.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 0, 0, 12);
             this.btReset.Size = new System.Drawing.Size(98, 26);
             this.btReset.TabIndex = 32;
-            this.btReset.Text = "Reset";
+            this.btReset.Text = "Làm mới";
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // UC_BaoCaoDiemSV
@@ -720,11 +720,11 @@
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel10.ResumeLayout(false);

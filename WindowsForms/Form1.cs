@@ -182,7 +182,7 @@ namespace DeMoQLSV1
         private void buttonItem12_Click(object sender, EventArgs e)
         {
             UC_TimKiemNganh ucTKNganh = new UC_TimKiemNganh();
-            AddNewTab("Tìm kiếm thông tin nghanh ", ucTKNganh);
+            AddNewTab("Tìm kiếm thông tin nghành ", ucTKNganh);
         }
 
         private void btItem_CapNhatTk_Click(object sender, EventArgs e)
