@@ -107,12 +107,25 @@ namespace DeMoQLSV1
 
         private void btThem_Click(object sender, EventArgs e)
         {
-
-            if (txtML.TextLength == 0 || txtTL.TextLength == 0)
+            string maNghanh = cbMaNghanh.SelectedValue != null ? cbMaNghanh.SelectedValue.ToString() : string.Empty;        
+            if (maNghanh.ToString()== null || maNghanh.ToString()=="")
             {
-                MessageBox.Show(" bạn phải nhập đầy đủ thông tin");
+                MessageBox.Show(" bạn phải chọn nghành");
+                cbMaNghanh.Focus();
                 return;
             }
+            else if (txtML.TextLength == 0)
+            {
+                MessageBox.Show(" bạn phải nhập mã lớp");
+                txtML.Focus();
+                return;
+            }
+            else if(txtTL.TextLength == 0)
+	        {
+                MessageBox.Show(" bạn phải nhập tên lớp");
+                txtTL.Focus();
+                return;
+	        }
             else if (txtML.TextLength > 11)
             {
                 MessageBox.Show(" Mã không vượt quá 11 kí tự");
