@@ -33,6 +33,8 @@
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
+            this.LogIn_ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.CapNhatTK_ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.btItem_CapNhatTk = new DevComponents.DotNetBar.ButtonItem();
             this.LogOut_ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
@@ -98,8 +100,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.LogIn_ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel5.SuspendLayout();
@@ -165,6 +165,28 @@
             this.ribbonPanel5.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel5.Size = new System.Drawing.Size(790, 94);
             this.ribbonPanel5.TabIndex = 2;
+            // 
+            // LogIn_ribbonBar1
+            // 
+            this.LogIn_ribbonBar1.AutoOverflowEnabled = true;
+            this.LogIn_ribbonBar1.ContainerControlProcessDialogKey = true;
+            this.LogIn_ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LogIn_ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem2});
+            this.LogIn_ribbonBar1.Location = new System.Drawing.Point(155, 0);
+            this.LogIn_ribbonBar1.Name = "LogIn_ribbonBar1";
+            this.LogIn_ribbonBar1.Size = new System.Drawing.Size(76, 91);
+            this.LogIn_ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.LogIn_ribbonBar1.TabIndex = 2;
+            this.LogIn_ribbonBar1.Text = "...........";
+            // 
+            // buttonItem2
+            // 
+            this.buttonItem2.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem2.Image")));
+            this.buttonItem2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem2.Name = "buttonItem2";
+            this.buttonItem2.SubItemsExpandWidth = 14;
+            this.buttonItem2.Text = "<div align=\"center\" width=\"60\">Đăng nhập</div>";
             // 
             // CapNhatTK_ribbonBar1
             // 
@@ -879,28 +901,6 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(396, 246);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // LogIn_ribbonBar1
-            // 
-            this.LogIn_ribbonBar1.AutoOverflowEnabled = true;
-            this.LogIn_ribbonBar1.ContainerControlProcessDialogKey = true;
-            this.LogIn_ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LogIn_ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem2});
-            this.LogIn_ribbonBar1.Location = new System.Drawing.Point(155, 0);
-            this.LogIn_ribbonBar1.Name = "LogIn_ribbonBar1";
-            this.LogIn_ribbonBar1.Size = new System.Drawing.Size(76, 91);
-            this.LogIn_ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.LogIn_ribbonBar1.TabIndex = 2;
-            this.LogIn_ribbonBar1.Text = "...........";
-            // 
-            // buttonItem2
-            // 
-            this.buttonItem2.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem2.Image")));
-            this.buttonItem2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem2.Name = "buttonItem2";
-            this.buttonItem2.SubItemsExpandWidth = 14;
-            this.buttonItem2.Text = "<div align=\"center\" width=\"60\">Đăng nhập</div>";
             // 
             // Form1
             // 
