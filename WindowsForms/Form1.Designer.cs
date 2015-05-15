@@ -97,9 +97,9 @@
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolLableStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel5.SuspendLayout();
@@ -877,17 +877,6 @@
             this.toolLableStatus.Text = ".";
             this.toolLableStatus.Visible = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(794, 340);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabItem1
             // 
             this.tabItem1.AttachedControl = this.tabControlPanel1;
@@ -901,6 +890,17 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(396, 246);
             this.reportViewer1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(794, 340);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -999,7 +999,6 @@
         private DevComponents.DotNetBar.TabItem tabItem1;
         private DevComponents.DotNetBar.RibbonBar BcTKGiangVien_ribbonBar14;
         private DevComponents.DotNetBar.ButtonItem buttonItem19;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ContextMenuStrip ctmnMain;
         private System.Windows.Forms.ToolStripMenuItem đóngCácTrangCònLạiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đóngTấtCảToolStripMenuItem;
@@ -1012,5 +1011,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolLableStatus;
         private DevComponents.DotNetBar.RibbonBar LogIn_ribbonBar1;
         private DevComponents.DotNetBar.ButtonItem buttonItem2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
